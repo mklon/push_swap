@@ -114,7 +114,7 @@ int				bigger_then_median(t_stack *stack, int median);
 /*
 ** push_help2.c
 */
-int				recurtion(t_stack **stack, int top, int num,
+int				recursion(t_stack **stack, int top, int num,
 							char **inst_list);
 int				search_median(t_stack *stack);
 int				small_search_median(t_stack *stack, t_stack *end);
@@ -157,6 +157,6 @@ void			division_help_b(t_stack **stack_a, t_stack **stack_b,
 /*
 ** one_arg.c
 */
-int     *one_argument(char *str, int amount, t_bonus *bonus, int i);
+int				*one_argument(char *str, int amount, t_bonus *bonus, int i);
 
 #endif

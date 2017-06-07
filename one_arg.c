@@ -27,7 +27,7 @@ int		*one_argument(char *str, int quantity, t_bonus *bonus, int i)
 		if (*dop != ' ' && (*(dop + 1) == ' ' || *(dop + 1) == '\0'))
 			quantity++;
 	amount = flags_check(quantity, temp, bonus, i);
-	if ((amount - quantity) == -1)
+	if ((amount - quantity) == -1 && amount > 0)
 		usage(i);
 	check_args(amount, quantity + 1, temp);
 	mass = (int*)malloc(sizeof(int) * (quantity - amount) + 1);
